@@ -11,9 +11,9 @@
             <div class="card bg-light mb-3">
                 <div class="card-header text-center">
                     {{ ad.rooms }} chambres, <strong>{{ ad.price }}&euro; / nuit</strong><br>
-                    <small>Pas encore noté</small>
+                    <medium>Pas encore noté</medium>
 
-                    <img src="{{ ad.coverImage }}" alt="image de l'appartement" style="height: 200px; width: 100%; display:block;">
+                    <img class="mt-3" src="{{ ad.coverImage }}" alt="image de l'appartement" style="height: 200px; width: 100%; display:block;">
                     <div class="card-body">
                         <h4>{{ ad.title }}</h4>
                         <p class="card-text">{{ ad.introduction }}</p>
