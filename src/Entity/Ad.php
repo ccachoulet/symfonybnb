@@ -69,6 +69,7 @@ class Ad
 
     /**
      * @ORM\OneToMany(targetEntity=Image::class, mappedBy="ad", orphanRemoval=true)
+     * @Assert\Valid()
      */
     private $images;
 
@@ -76,7 +77,6 @@ class Ad
     {
         $this->images = new ArrayCollection();
     }
-
 
     /**
      * Permet d'initialiser le slug 
